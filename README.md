@@ -1,6 +1,6 @@
 # Souvik Rana's Portfolio Website
 
-Welcome to my portfolio website! My name is **Souvik Rana**, and I am a **Software Developer**. This website showcases my skills, projects, and contact information. Feel free to explore and reach out if you'd like to discuss potential collaborations or opportunities.
+Welcome to my portfolio website! My name is **Souvik Rana**, and I am a **Software Engineer**. This website showcases my skills, projects, and contact information. Feel free to explore and reach out if you'd like to discuss potential collaborations or opportunities.
 
 ## 🚀 Features
 

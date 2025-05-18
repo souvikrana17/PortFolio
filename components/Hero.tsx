@@ -59,7 +59,7 @@ const Hero = () => {
       <div className="flex flex-col md:flex-row justify-between items-center relative my-20 z-10 mx-auto max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] gap-16 bg-transparent">
         <div className="flex flex-col items-start justify-center max-w-[60%]">
           <p className="uppercase tracking-widest text-base md:text-lg lg:text-xl text-blue-100">
-            Software Developer
+            Software Engineer
           </p>
           <TextGenerateEffect
             words="Hello, I'm Souvik Rana"

@@ -70,8 +70,8 @@ export const FloatingNav = ({ navItems, className }: { navItems: { name: string;
             <Image
               src={Logo}
               alt="Logo"
-              width={30}
-              height={30}
+              width={60}
+              height={60}
               className="mr-2 md:mr-4"
             />
             <h1 className="text-lg md:text-xl font-bold text-white">Souvik Rana</h1>

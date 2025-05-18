@@ -80,21 +80,22 @@ export const projects = [
   },
   {
     id: 2,
+    title: "THE WATCH LIST: Movie Recommendation System",
+    des: "A hybrid movie recommendation system using content-based and collaborative filtering with cosine similarity, and built a full-stack web app",
+    img: "/p3.png",
+    iconLists: ["/jup.svg","/py.svg"],
+    link: "https://github.com/Souvik-Rana/MOVIE-RECOMMENDATION-SYSTEM",
+  },
+  {
+    id: 3,
     title: "Yoom - Video Conferencing App",
     des: "Simplify your video conferencing experience with Yoom.",
     img: "/p2.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
     link: "/workinprogress.gif",
   },
+  
   /*{
-    id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
-  },
-  {
     id: 4,
     title: "Animated Apple Iphone 3D Website",
     des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
