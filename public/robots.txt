@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://souvik-rana.vercel.app
+
+# Sitemaps
+Sitemap: https://souvik-rana.vercel.app/sitemap.xml
