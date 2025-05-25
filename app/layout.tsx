@@ -4,6 +4,8 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 import { ThemeProvider } from "./provider";
+import Head from 'next/head'
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,27 +21,28 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <link rel="icon" href="logo.png" sizes="any" />
-        
-        {/* ✅ SCHEMA.ORG PERSON JSON-LD */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Person",
-              "name": "Souvik Rana",
-              "url": "https://souvik-rana.vercel.app/", 
-              "sameAs": [
-                "https://github.com/Souvik-Rana",
-                "https://www.linkedin.com/in/souvik-rana-sr17/",
-                "https://gravatar.com/souvikrana"
-              ]
-            }),
-          }}
-        />
-      </head>
+     <Head>
+  <link rel="icon" href="logo.png" sizes="any" />
+
+  {/* ✅ JSON-LD Structured Data */}
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+      __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Souvik Rana",
+        "url": "https://souvik-rana.vercel.app",
+        "sameAs": [
+          "https://github.com/YOUR_USERNAME",
+          "https://linkedin.com/in/YOUR_USERNAME",
+          "https://en.gravatar.com/YOUR_USERNAME"
+        ]
+      }),
+    }}
+  />
+</Head>
+
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
