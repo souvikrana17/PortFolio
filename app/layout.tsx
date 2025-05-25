@@ -4,8 +4,7 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 import { ThemeProvider } from "./provider";
-import Head from 'next/head'
-
+import StructuredData from "@/components/StructuredData";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,29 +20,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-     <Head>
-  <link rel="icon" href="logo.png" sizes="any" />
-
-  {/* ✅ JSON-LD Structured Data */}
-  <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{
-      __html: JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Souvik Rana",
-        "url": "https://souvik-rana.vercel.app",
-        "sameAs": [
-          "https://github.com/YOUR_USERNAME",
-          "https://linkedin.com/in/YOUR_USERNAME",
-          "https://en.gravatar.com/YOUR_USERNAME"
-        ]
-      }),
-    }}
-  />
-</Head>
+      <head>
+        <link rel="icon" href="/logo.png" sizes="any" />
+      </head>
 
       <body className={inter.className}>
+       
+        <StructuredData />
+
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
@@ -52,6 +36,7 @@ export default function RootLayout({
         >
           {children}
         </ThemeProvider>
+
         <SpeedInsights />
         <Analytics />
       </body>
