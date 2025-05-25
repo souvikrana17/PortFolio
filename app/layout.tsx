@@ -4,7 +4,7 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 import { ThemeProvider } from "./provider";
-import StructuredData from "@/components/StructuredData";
+import StructuredData from "@/components/StructuredData"; // Import the component
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,11 +23,8 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/logo.png" sizes="any" />
       </head>
-
       <body className={inter.className}>
-       
-        <StructuredData />
-
+        <StructuredData /> {/* Include the structured data script */}
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
@@ -36,7 +33,6 @@ export default function RootLayout({
         >
           {children}
         </ThemeProvider>
-
         <SpeedInsights />
         <Analytics />
       </body>
