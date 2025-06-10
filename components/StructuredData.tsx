@@ -2,13 +2,15 @@ const StructuredData = () => {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Person",
-    "name": "Souvik Rana",
+    "name": "SOUVIK RANA",
     "url": "https://souvik-rana.vercel.app",
     "sameAs": [
-              "https://github.com/Souvik-Rana",
-              "https://www.linkedin.com/in/souvik-rana-sr17/",
-              "https://gravatar.com/souvikrana"
-             ]
+      "https://github.com/Souvik-Rana",
+      "https://www.linkedin.com/in/souvik-rana-sr17/",
+      "https://www.instagram.com/souvikrana17/",
+      "https://www.kaggle.com/souvikrana17",
+      "https://gravatar.com/souvikrana"
+    ]
   };
 
   return (
