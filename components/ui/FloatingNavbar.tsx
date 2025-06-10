@@ -74,7 +74,7 @@ export const FloatingNav = ({ navItems, className }: { navItems: { name: string;
               height={60}
               className="mr-2 md:mr-4"
             />
-            <h1 className="text-lg md:text-xl font-bold text-white">Souvik Rana</h1>
+            <h1 className="text-lg md:text-xl font-bold text-white">SOUVIK RANA</h1>
           </a>
         </div>
 
