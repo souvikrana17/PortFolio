@@ -26,8 +26,7 @@ const socialMedia = [
   id: 4,
   img: <SiKaggle size={30} />, 
   link: "https://www.kaggle.com/souvikrana17"
-}
-
+  },
   {
     id: 5,
     img: <IoMail size={30} />, 
