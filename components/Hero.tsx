@@ -4,26 +4,33 @@ import Photo from "./Photo";
 import MagicButton from "./MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+import { SiKaggle } from "react-icons/si";
 
 const socialMedia = [
   {
     id: 1,
-    img: <IoLogoGithub size={30} />, // Increased icon size
+    img: <IoLogoGithub size={30} />, 
     link: "https://github.com/Souvik-Rana"
   },
   {
     id: 2,
-    img: <IoLogoLinkedin size={30} />, // Increased icon size
+    img: <IoLogoLinkedin size={30} />, 
     link: "https://www.linkedin.com/in/souvik-rana-sr17"
   },
   {
     id: 3,
-    img: <IoLogoInstagram size={30} />, // Increased icon size
+    img: <IoLogoInstagram size={30} />, 
     link: "https://instagram.com/souvikrana17"
   },
   {
-    id: 4,
-    img: <IoMail size={30} />, // Increased icon size
+  id: 4,
+  img: <SiKaggle size={30} />, 
+  link: "https://www.kaggle.com/souvikrana17"
+}
+
+  {
+    id: 5,
+    img: <IoMail size={30} />, 
     link: "https://mail.google.com/mail/?view=cm&fs=1&to=rana.souvik17@gmail.com&su=Hire%20Me&body=Hi%20Souvik,%20I%20would%20like%20to%20discuss%20a%20potential%20project."
   }
 ];
@@ -62,12 +69,12 @@ const Hero = () => {
             Software Engineer
           </p>
           <TextGenerateEffect
-            words="Hello, I'm Souvik Rana"
+            words="Hello, I'm SOUVIK RANA"
             className="text-left text-[40px] md:text-5xl lg:text-6xl"
           />
           <div className="flex flex-col items-start max-w-[80%]">
             <p className="text-left mb-8 text-xs md:text-sm lg:text-base leading-relaxed">
-              My strength is in engineering elegant digital platforms, complemented by my proficiency in numerous programming languages and technologies.
+             I’m a passionate Software Engineer, who thrives at the intersection of full-stack development, AI/ML, IoT/embedded systems and cybersecurity. Over the last few years I’ve built end-to-end solutions that blend sleek user experiences with robust back-end architectures and intelligent data pipelines.
             </p>
 
             <div className="flex items-center md:gap-6 gap-6">
