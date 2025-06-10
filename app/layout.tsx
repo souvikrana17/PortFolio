@@ -1,10 +1,11 @@
+// app/layout.tsx
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { SpeedInsights } from '@vercel/speed-insights/next';
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 import { ThemeProvider } from "./provider";
-import StructuredData from "@/components/StructuredData"; // Import the component
+import StructuredData from "@/components/StructuredData"; // Component for structured data
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,24 +23,13 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="icon" href="/logo.png" sizes="any" />
-        <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "SOUVIK RANA",
-  "url": "https://souvik-rana.vercel.app/",
-  "sameAs": [
-    "https://github.com/Souvik-Rana",
-    "https://www.linkedin.com/in/souvik-rana-sr17/",
-    "https://www.instagram.com/souvikrana17/",
-    "https://www.kaggle.com/souvikrana17"      
-  ]
-}
-</script>
-
+        {/* You may also include other <meta> tags here if needed */}
       </head>
       <body className={inter.className}>
-        <StructuredData /> {/* Include the structured data script */}
+        {/* SEO structured data for Google */}
+        <StructuredData />
+
+        {/* Theme + App content */}
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
@@ -48,6 +38,8 @@ export default function RootLayout({
         >
           {children}
         </ThemeProvider>
+
+        {/* Vercel insights */}
         <SpeedInsights />
         <Analytics />
       </body>
