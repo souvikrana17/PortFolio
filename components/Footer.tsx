@@ -1,6 +1,8 @@
 import { FaLocationArrow } from "react-icons/fa6";
 import { IoLogoGithub, IoLogoLinkedin, IoLogoInstagram, IoMail } from "react-icons/io5";
 import MagicButton from "./MagicButton";
+import { SiKaggle } from "react-icons/si";
+
 
 // Define social media icons
 const socialMedia = [
@@ -20,10 +22,15 @@ const socialMedia = [
     link: "https://instagram.com/souvikrana17",
   },
   {
-    id: 4,
-    img: <IoMail size={30} />, // Increased icon size
-    link: "https://mail.google.com/mail/?view=cm&fs=1&to=rana.souvik17@gmail.com&su=Hire%20Me&body=Hi%20Souvik,%20I%20would%20like%20to%20discuss%20a%20potential%20project.",
+  id: 4,
+  img: <SiKaggle size={30} />, 
+  link: "https://www.kaggle.com/souvikrana17"
   },
+  {
+    id: 5,
+    img: <IoMail size={30} />, 
+    link: "https://mail.google.com/mail/?view=cm&fs=1&to=rana.souvik17@gmail.com&su=Hire%20Me&body=Hi%20Souvik,%20I%20would%20like%20to%20discuss%20a%20potential%20project."
+  }
 ];
 
 const Footer = () => {
