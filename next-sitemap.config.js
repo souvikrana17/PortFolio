@@ -1,5 +1,5 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-    siteUrl: 'https://souvik-rana.vercel.app',
+    siteUrl: 'https://souvikrana17.vercel.app',
     generateRobotsTxt: true,
 };
