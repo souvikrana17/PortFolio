@@ -9,12 +9,12 @@ const socialMedia = [
   {
     id: 1,
     img: <IoLogoGithub size={30} />, // Increased icon size
-    link: "https://github.com/Souvik-Rana",
+    link: "https://github.com/souvikrana17",
   },
   {
     id: 2,
     img: <IoLogoLinkedin size={30} />, // Increased icon size
-    link: "https://www.linkedin.com/in/souvik-rana-sr17",
+    link: "https://www.linkedin.com/in/souvikrana17",
   },
   {
     id: 3,
